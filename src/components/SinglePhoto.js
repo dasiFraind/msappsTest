@@ -1,14 +1,14 @@
 import React from 'react';
+import {Img} from './StyledComponents';
 
 export default function SinglePhoto() {
     const url = localStorage.getItem('currentImg');
+    const height = localStorage.getItem('height');
+    const width = localStorage.getItem('width');
 
-    // dfsdfs
     return (
-            <div className="d-flex justify-content-center align-items-center">
-                <img src={url} alt={url}/>
+            <div className="text-center" >
+                <Img src={url} height={height} width={width}/>
             </div>
     )
 }
-
-
