@@ -10,7 +10,7 @@ export default withRouter(function Photos(props) {
     }
 
     return (
-        <div className="d-flex justify-content-center align-items-center">
+        <div className="d-flex justify-content-end align-items-center">
             {data.photo.map((p) => (
                 <img
                     key={p.id}
