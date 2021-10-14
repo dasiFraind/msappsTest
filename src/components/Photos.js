@@ -12,12 +12,12 @@ export default withRouter(function Photos(props) {
     return (
         <div className="d-flex justify-content-end align-items-center">
             {data.photo.map((p) => (
-                <img
+               <div> <img
                     key={p.id}
                     src={p.url_s}
                     alt={p.url_s}
                     onClick={() => clickImg(p.url_s)}
-                />
+                /></div>
             ))}
         </div>
     )
